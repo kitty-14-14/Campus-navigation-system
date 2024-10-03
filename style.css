@@ -1,0 +1,177 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Header Styling */
+header {
+    background-color: #004d00; /* Deep green header */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Yellow highlight on hover */
+}
+
+header nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #66bb6a, #43a047); /* Green gradient */
+    color: white;
+}
+
+.hero-section h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: inline-block;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: #004d00; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #003300; /* Darker green on hover */
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #e0e0e0; /* Placeholder for map */
+}
+
+/* Directions Section */
+.directions-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background for contrast */
+}
+
+.directions-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.directions-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.directions-inputs input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.directions-inputs button {
+    padding: 10px 20px;
+    background-color: #66bb6a; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.directions-inputs button:hover {
+    background-color: #43a047; /* Darker button on hover */
+}
+
+#directionSteps {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#directionSteps li {
+    padding: 10px;
+    background-color: #e0e0e0; /* Light grey for steps */
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #004d00; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

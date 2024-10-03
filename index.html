@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURU NANAK KHALSA COLLEGE
+        OF
+        ARTS, SCIENCE & COMMERCE
+         - Campus Navigation System</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>GURU NANAK KHALSA COLLEGE
+                OF
+                ARTS, SCIENCE & COMMERCE
+                </h1>
+            <h2>Campus Navigation System</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Map</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> POI</a></li>
+                <li><a href="#"><i class="fas fa-user-cog"></i> Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h3>Find Your Way Around GN Khalsa College</h3>
+        <p>Explore buildings, find points of interest, and get directions with our interactive campus map.</p>
+        <div class="search-box">
+            <input type="text" id="locationSearch" placeholder="Search for a building or location">
+            <button id="searchBtn" onclick="searchLocation()"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h2>Campus Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Directions Section -->
+    <section class="directions-section">
+        <h3>Get Directions</h3>
+        <div class="directions-inputs">
+            <input type="text" id="startLocation" placeholder="Start Location">
+            <input type="text" id="endLocation" placeholder="End Location">
+            <button onclick="getDirections()">Get Directions</button>
+        </div>
+        <ul id="directionSteps"></ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© GURU NANAK KHALSA COLLEGE
+            OF
+            ARTS, SCIENCE & COMMERCE
+            - Campus Navigation System</p>
+    </footer>
+
+    <!-- Add JavaScript at the end, before closing the body tag -->
+    <script src="script.js"></script>
+
+</body>
+</html>
